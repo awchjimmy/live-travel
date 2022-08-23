@@ -151,7 +151,7 @@
       <div class="card">
         <div class="card-header">基本資料</div>
         <div class="card-body">
-          <form action="" id="vue-cart-form">
+          <form action="" id="vue-cart-form" method="POST">
             <label for="order-name" class="mt-2"
               >訂購人（全名）<span style="color: red">*</span></label
             >
@@ -165,7 +165,7 @@
             <label for="order-email" class="mt-2"
               >Email <span style="color: red">*</span></label
             >
-            <input type="text" id="order-email" class="form-control" required />
+            <input type="email" id="order-email" class="form-control" required />
 
             <label for="order-referer" class="mt-2">介紹人（選填）</label>
             <input type="text" id="order-referer" class="form-control" />
@@ -174,31 +174,34 @@
               >自取地點 <span style="color: red">*</span></label
             >
 
-            <div><input type="radio" name="shipping" id="nanqu" /> 南區</div>
-            <div><input type="radio" name="shipping" id="beitun" /> 北屯</div>
-            <div><input type="radio" name="shipping" id="caotun" /> 草屯</div>
-            <div><input type="radio" name="shipping" id="yuchi" /> 魚池</div>
+            <div>
+              <input type="radio" name="shipping" id="nanqu" required /> 南區
+            </div>
+            <div>
+              <input type="radio" name="shipping" id="beitun" required /> 北屯
+            </div>
+            <div>
+              <input type="radio" name="shipping" id="caotun" required /> 草屯
+            </div>
+            <div>
+              <input type="radio" name="shipping" id="yuchi" required /> 魚池
+            </div>
             <div>
               <input type="radio" name="shipping" id="other" /> 其他
               <input type="text" name="other-text" id="other-text" />
             </div>
+
+            <div>
+              <input
+                type="submit"
+                value="送出訂單"
+                class="btn btn-primary mt-3"
+                style="width: 100%"
+              />
+            </div>
           </form>
         </div>
       </div>
-    </div>
-
-    <!-- bottom navbar -->
-    <div class="container" id="vue-cart-submit">
-      <div class="p-5"></div>
-      <nav class="navbar fixed-bottom navbar-light bg-light">
-        <a
-          href="/ecom/payment.html"
-          class="btn btn-primary text-center"
-          style="width: 100%"
-        >
-          送出訂單
-        </a>
-      </nav>
     </div>
 
     <script
