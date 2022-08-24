@@ -155,39 +155,39 @@
             <label for="order-name" class="mt-2"
               >訂購人（全名）<span style="color: red">*</span></label
             >
-            <input type="text" id="order-name" class="form-control" required />
+            <input type="text" id="order-name" name="order-name" class="form-control" required />
 
             <label for="order-phone" class="mt-2"
               >手機 <span style="color: red">*</span></label
             >
-            <input type="text" id="order-phone" class="form-control" required />
+            <input type="text" id="order-phone" name="order-phone" class="form-control" required />
 
             <label for="order-email" class="mt-2"
               >Email <span style="color: red">*</span></label
             >
-            <input type="email" id="order-email" class="form-control" required />
+            <input type="email" id="order-email" name="order-email" class="form-control" required />
 
             <label for="order-referer" class="mt-2">介紹人（選填）</label>
-            <input type="text" id="order-referer" class="form-control" />
+            <input type="text" id="order-referer" name="order-referer" class="form-control" />
 
             <label for="order-shipping" class="mt-2"
               >自取地點 <span style="color: red">*</span></label
             >
 
             <div>
-              <input type="radio" name="shipping" id="nanqu" required /> 南區
+              <input type="radio" name="shipping" id="nanqu" value="nanqu" required /> 南區
             </div>
             <div>
-              <input type="radio" name="shipping" id="beitun" required /> 北屯
+              <input type="radio" name="shipping" id="beitun" value="beitun" required /> 北屯
             </div>
             <div>
-              <input type="radio" name="shipping" id="caotun" required /> 草屯
+              <input type="radio" name="shipping" id="caotun" value="caotun" required /> 草屯
             </div>
             <div>
-              <input type="radio" name="shipping" id="yuchi" required /> 魚池
+              <input type="radio" name="shipping" id="yuchi" value="yuchi" required /> 魚池
             </div>
             <div>
-              <input type="radio" name="shipping" id="other" /> 其他
+              <input type="radio" name="shipping" value="other" id="other" /> 其他
               <input type="text" name="other-text" id="other-text" />
             </div>
 
